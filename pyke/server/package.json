@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "tslint --project .",
     "start": "nodemon --exec babel-node src/app.js"
   },
   "keywords": [],
@@ -19,6 +20,7 @@
     "@babel/core": "^7.0.0",
     "@babel/node": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
+    "@types/express": "^4.16.0",
     "nodemon": "^1.18.3",
     "prettier": "^1.14.2",
     "tslint": "^5.11.0",
