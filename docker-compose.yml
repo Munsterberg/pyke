@@ -1,0 +1,12 @@
+version: '3.3'
+
+services:
+  server:
+    container_name: server
+    build:
+      context: ./pyke/server
+      dockerfile: Dockerfile
+    volumes:
+      - './pyke/server:/usr/src/app'
+    ports:
+      - 3001:3000
