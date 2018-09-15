@@ -25,3 +25,8 @@ userRouter.get(
 userRouter.get("/auth/current_user", (req: any, res) => {
   res.send(req.user);
 });
+
+userRouter.get("/auth/logout", (req: any, res) => {
+  req.logout();
+  res.redirect("/");
+});
