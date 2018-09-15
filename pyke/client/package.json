@@ -47,6 +47,14 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "proxy": {
+    "/auth/google": {
+      "target": "http://localhost:3000"
+    },
+    "/api/*": {
+      "target": "http://localhost:3000/api"
+    }
+  },
   "jest": {
     "transform": {
       "^.+\\.tsx?$": "ts-jest"
