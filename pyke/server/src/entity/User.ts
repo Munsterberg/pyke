@@ -6,5 +6,5 @@ export class User {
   id: number;
 
   @Column()
-  name: string;
+  googleId: string;
 }
