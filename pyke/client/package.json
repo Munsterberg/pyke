@@ -8,7 +8,9 @@
     "emotion": "^9.2.8",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
-    "react-emotion": "^9.2.8"
+    "react-emotion": "^9.2.8",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
