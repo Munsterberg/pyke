@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-import Header from "../../common/Header";
+import { connect } from "react-redux";
+
+import { requestCurrentUser } from "../../session/sessionActions";
 
 class Dashboard extends Component {
   public render() {
@@ -11,4 +13,19 @@ class Dashboard extends Component {
   }
 }
 
-export default Dashboard;
+const mapStateToProps = state => {
+  return {
+    user: state.user
+  };
+};
+
+const mapDispatchToProps = dispatch => {
+  return {
+    onRequestCurrentUser: () => dispatch(requestCurrentUser())
+  };
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Dashboard);
