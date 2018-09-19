@@ -23,6 +23,10 @@ userRouter.get(
 );
 
 userRouter.get("/auth/current_user", (req: any, res) => {
+  if (!req.user) {
+    res.send("no user");
+  }
+
   res.send(req.user);
 });
 
