@@ -1,8 +1,13 @@
 import React, { Component } from "react";
+import Header from "../../common/Header";
 
 class Dashboard extends Component {
   public render() {
-    return <div>Dashboard</div>;
+    return (
+      <div>
+        <h1>Dashboard</h1>
+      </div>
+    );
   }
 }
 
