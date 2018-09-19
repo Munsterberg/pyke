@@ -4,11 +4,11 @@ import {
   SET_CURRENT_USER_SUCCESS
 } from "./sessionActions";
 
-type State = {
+interface State {
   readonly isPending: boolean;
   readonly user: object;
   readonly error: string;
-};
+}
 
 const initialState: State = {
   isPending: false,
